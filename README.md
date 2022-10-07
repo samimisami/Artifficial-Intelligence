@@ -11,6 +11,13 @@
 - Tensorflow.keras
 - sklearn
 ## Dataset Analysis
+This dataset contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10 classes:  
+| 0 = airconditioner  | 5 = engineidling |
+|---------------------|------------------|
+| 1 = carhorn         | 6 = gunshot      |
+| 2 = childrenplaying | 7 = jackhammer   |
+| 3 = dogbark         | 8 = siren        |
+| 4 = drilling        | 9 = street_music |
 
 ## Spectrogram
 ## Preprocessing
@@ -20,8 +27,4 @@
 ## References
 1. [Global AI Hub](https://globalaihub.com/courses/introduction-to-deep-learning/)
 2. [Kaggle](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
-
 ---
-
-|Isim | Soyad |
-|--|--|
