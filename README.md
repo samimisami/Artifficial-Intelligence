@@ -1,34 +1,20 @@
-# Artifficial-Intelligence
+# Urban Sound Classification
+### Deep Learning (Convolutional Neural Network)
 
 ![](https://static.wikia.nocookie.net/bleach/images/1/16/Ep329UraharaProfileOption4.png/revision/latest/scale-to-width-down/1000?cb=20220325000742&path-prefix=en)
 
-# Merhaba
-## Kanalıma hoşgeldiniz bu readme dosyası markdown nasıl yazılır ve portfolyo nasıl oluşturulur örneği için yapılmıştır.
+## Libraries
+## Dataset Analysis
+## Spectrogram
+## Preprocessing
+## Convolutional Neural Network Implementation
+## Results
 
-### İçerikler:
-
-- Markdown nedir?
-- Markdown nasıl yazılır?
-- Portfolyo neden önemlidir?
-
-Bu derslere sonradan ulaşmak için [bu linke](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) tıklayın!
-
-
-[Linkedin](https://www.linkedin.com/in/mustafa-furkan-demirbilek-a56302201/)
-
-Markdown yazmak harika! Bu sayede portfolyo oluşturabiliyorum.
-
-Bu derste kullandığım örnek kod aşağıdadır 
-
-import pandas as pd
-import seaborn as sns
-
-def merhaba():
-pass
-
+## References
+1. [Global AI Hub](https://globalaihub.com/courses/introduction-to-deep-learning/)
+2. [Kaggle](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
 
 ---
-
 
 |Isim | Soyad |
 |--|--|
