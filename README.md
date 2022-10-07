@@ -50,13 +50,12 @@ for i in range(data.shape[0]):
 ## Preprocessing
 
 ## Convolutional Neural Network Implementation
+
 ## Results
-The following results are obtained by using 0.33 test to train ratio.  
+The following results are obtained by using 0.25 train to test ratio.  
   
-Train Accuracy: 95.90%  
-Test Accuracy: 73.11%  
-Train Loss: 66.11%  
-Test Loss: 66.11%
+Test Accuracy: 90.24%  
+Test Loss: 63.17%
 
 ## References
 1. [Global AI Hub](https://globalaihub.com/courses/introduction-to-deep-learning/)
