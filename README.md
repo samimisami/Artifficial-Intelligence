@@ -50,7 +50,9 @@ for i in range(data.shape[0]):
 ## Preprocessing
 
 ## Convolutional Neural Network Implementation
-
+**Here our Convolutional Neural Network Model:**  
+  
+![](https://i.ibb.co/YyczCnf/Untitled.png)
 ## Results
 The following results are obtained by using 0.25 train to test ratio.  
   
