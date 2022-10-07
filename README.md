@@ -48,8 +48,18 @@ for i in range(data.shape[0]):
 ~~~~
 ![](https://i.ibb.co/0XGy0fn/spec.png)
 ## Preprocessing
-
+We need to use (X,128) data shape in order to use Convolutional Neural Network. So we are shaping our data as (X.shape,128).  
+~~~~
+X_ = data_last[0]
+Y = data_last[1]
+X = np.empty([data.shape[0], 128])
+~~~~
 ## Convolutional Neural Network Implementation
+Now we need to arrange our model to get input as much as our data has and output as 1 because our data has only one class. And we used 2 hidden layers, first one is getting 16 inputs, while second is getting 8. Making 128 total as Convolutional Neural Network needs.
+~~~~
+X_train = X_train.reshape(X_train.shape[0], 16, 8, 1)
+X_test = X_test.reshape(X_test.shape[0], 16, 8, 1)
+~~~~
 **Here our Convolutional Neural Network Model:**  
   
 ![](https://i.ibb.co/YyczCnf/Untitled.png)
