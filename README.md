@@ -25,18 +25,32 @@ We've used librosa to generate grayscale heatmap of the data.
 ## Spectrogram
 We've generated spectrogram for each data with librosa.  
 ~~~~
-y, sr = librosa.load("/content/UrbanSound/UrbanSound8K/audio/fold5/100263-2-0-36.wav")
-plt.figure(figsize = (20,10))
-D = librosa.amplitude_to_db(np.abs(librosa.stft(y)), ref = np.max)
-plt.subplot(4, 2, 1)
-librosa.display.specshow(D, y_axis = "linear")
-plt.colorbar(format='%+2.0f dB')
+def create_pectrogram(path):
+  y, sr = librosa.load(path)
+  #spec_conv = np.mean(librosa.feature.melspectrogram(y=y, sr=sr).T,axis=0)
+  spec = librosa.feature.melspectrogram(y=y)
+  spec_conv = librosa.amplitude_to_db(spec, ref = np.max)
+  spec_mean = np.mean((spec_conv / 80.0).T, axis = 0)
+  return spec_mean
+~~~~
+~~~~
+spectrogram = []
+classid = []
+
+for i in range(data.shape[0]):
+  file_name = "/content/UrbanSound/UrbanSound8K/audio/fold" + str(data["fold"][i]) + "/" + data["slice_file_name"][i]
+  label = data["classID"][i]
+
+  spec_conv = create_pectrogram(file_name)
+
+  spectrogram.append(spec_conv)
+  classid.append(label)
 ~~~~
 ![](https://i.ibb.co/0XGy0fn/spec.png)
 ## Preprocessing
+
 ## Convolutional Neural Network Implementation
 ## Results
-A Convolutional Neural Network with dropouts is used.  
 The following results are obtained by using 0.33 test to train ratio.  
   
 Train Accuracy: 95.90%  
