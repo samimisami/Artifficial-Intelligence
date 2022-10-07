@@ -18,7 +18,8 @@ This dataset contains 8732 labeled sound excerpts (<=4s) of urban sounds from 10
 | 2 = childrenplaying | 7 = jackhammer   |
 | 3 = dogbark         | 8 = siren        |
 | 4 = drilling        | 9 = street_music |
-We've used librosa to generate grayscale heatmap of the data.
+
+We've used librosa to generate grayscale heatmap of the data.  
 ![](https://i.ibb.co/0hQ45Mq/indir.png)
 ## Spectrogram
 ## Preprocessing
