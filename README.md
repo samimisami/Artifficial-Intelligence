@@ -59,6 +59,10 @@ The following results are obtained by using 0.25 train to test ratio.
 Test Accuracy: 90.24%  
 Test Loss: 63.17%
 
+Here is the graphical accuracy result:  
+![](https://i.ibb.co/2NwVMpH/indir-1.png)  
+Here is the graphical loss result:  
+![](https://i.ibb.co/V3zJy34/indir-2.png)  
 ## References
 1. [Global AI Hub](https://globalaihub.com/courses/introduction-to-deep-learning/)
 2. [Kaggle](https://www.kaggle.com/datasets/chrisfilo/urbansound8k)
